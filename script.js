@@ -32,6 +32,7 @@ function y() {
     } else if (a == 3) {
         span.innerHTML = yes[3]
         a++
+
         console.log(a)
     } else if (a == 4) {
         span.innerHTML = yes[4]
@@ -40,10 +41,15 @@ function y() {
     }
     if (a == 2 && b == 1) {
         span.innerHTML = no[3]
+        btnLight[0].disabled = true
+        btnLight[1].disabled = true
 
     }
     if (a == 4 && b == 1) {
-        span.innerHTML = yes[4]
+        span.innerHTML = no[2]
+    }
+    if (a == 4 && b == 2) {
+        span.innerHTML = no[2]
     }
 }
 
@@ -59,10 +65,19 @@ function name() {
         span.innerHTML = yes[3]
         b++
         console.log(b)
+    } else if (a == 3) {
+        span.innerHTML = yes[3]
+        b++
+    } else if (a == 4) {
+        span.innerHTML = no[2]
+        btnLight[0].disabled = true
+        btnLight[1].disabled = true
     }
     if (b == 2) {
         span.innerHTML = no[1]
         b++
+        btnLight[0].disabled = true
+        btnLight[1].disabled = true
         console.log(b)
     }
 }
