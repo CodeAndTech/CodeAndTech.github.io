@@ -20,15 +20,17 @@ console.log(span)
 
 function y() {
     if (a == 0) {
-        span.innerHTML = yes[0]
+        ul.appendChild(button_yes)
+        ul.appendChild(yes_0)
         a++
         console.log(a)
     } else if (a == 1) {
-        span.innerHTML = yes[1]
+        ul.appendChild(yes_1)
+        ul.appendChild(button_yes)
         a++
         console.log(a)
     } else if (a == 2) {
-        span.innerHTML = yes[2]
+        ul.appendChild(yes_2)
         a++
         console.log(a)
     } else if (a == 3) {
@@ -40,6 +42,8 @@ function y() {
         span.innerHTML = yes[4]
         a++
         console.log(a)
+        btnLight[0].disabled = true
+        btnLight[1].disabled = true
     }
     if (a == 2 && b == 1) {
         span.innerHTML = no[3]
@@ -59,6 +63,8 @@ function name() {
     if (a == 0) {
         span.innerHTML = no[0]
         console.log(a)
+        btnLight[0].disabled = true
+        btnLight[1].disabled = true
     } else if (a == 1) {
         span.innerHTML = yes[3]
         b++
@@ -95,3 +101,33 @@ btnLight[0].addEventListener('click', function e() {
 btnLight[1].addEventListener('click', function e() {
     name()
 })
+
+
+const button_yes = document.createElement('li')
+const isi_button = document.createTextNode(`yes`)
+button_yes.appendChild(isi_button)
+
+button_yes.style.float = 'right'
+const button = [button_yes]
+button.forEach(e => button_yes.setAttribute('class', `${Date.now()}`))
+
+
+
+
+
+// buat list dengan DOM
+const yes_0 = document.createElement('li')
+const isi_New_Li_0 = document.createTextNode(`${yes[0]}`)
+yes_0.appendChild(isi_New_Li_0)
+// tangkap parent
+const ul = document.querySelector('.display li')
+// masukkan element baru
+
+
+const yes_1 = document.createElement('li')
+const isi_New_Li_1 = document.createTextNode(`${yes[1]}`)
+yes_1.appendChild(isi_New_Li_1)
+
+const yes_2 = document.createElement('li')
+const isi_New_Li_2 = document.createTextNode(`${yes[2]}`)
+yes_2.appendChild(isi_New_Li_2)
