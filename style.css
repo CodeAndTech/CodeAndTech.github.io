@@ -1,6 +1,6 @@
 @font-face {
     font-family: sourceSans;
-    src: url("/SourceSansPro-ExtraLight.otf");
+    src: url("/SourceSansPro-Regular.otf");
 }
 
 .wrapper {
@@ -29,8 +29,8 @@
 }
 
 span {
-    font-family:
-        padding: 3px;
+    font-family: 'sourceSans';
+    padding: 3px;
 }
 
 .button {
