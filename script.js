@@ -1,7 +1,9 @@
 let yes = [
     'apakah mengalami gejala batuk, demam, sesak nafas?',
     'sudah lebih dari 4 hari atau belum?', 'apakah gejala semakin memburuk?',
-    'Pernah mengunjungi Negara atau kota yang sudah terinfeksi contohnya:China,Singapura,Malaysia,Jakarta,Bekasi,Depok',
+    `Pernah mengunjungi Negara atau kota yang sudah terinfeksi 
+    contohnya:China,Singapura,Malaysia
+    ,Jakarta,Bekasi,Depok`,
     'Anda termasuk dalam pasien dengan kondisi BERAT, segerakan cek kesehatan di rumah sakit rujukan corona atau telepon hotline corona di 112/119'
 ]
 let no = [

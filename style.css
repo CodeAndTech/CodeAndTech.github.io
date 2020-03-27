@@ -1,3 +1,8 @@
+@font-face {
+    font-family: sourceSans;
+    src: url("/SourceSansPro-ExtraLight.otf");
+}
+
 .wrapper {
     width: 400px;
     min-height: 500px;
@@ -12,6 +17,20 @@
 .message {
     min-height: 400px;
     border: 1px solid black;
+    padding: 5px;
+}
+
+.display {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 3px;
+}
+
+span {
+    font-family:
+        padding: 3px;
 }
 
 .button {
