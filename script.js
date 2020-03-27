@@ -20,13 +20,11 @@ console.log(span)
 
 function y() {
     if (a == 0) {
-        ul.appendChild(button_yes)
         ul.appendChild(yes_0)
         a++
         console.log(a)
     } else if (a == 1) {
         ul.appendChild(yes_1)
-        ul.appendChild(button_yes)
         a++
         console.log(a)
     } else if (a == 2) {
@@ -103,13 +101,6 @@ btnLight[1].addEventListener('click', function e() {
 })
 
 
-const button_yes = document.createElement('li')
-const isi_button = document.createTextNode(`yes`)
-button_yes.appendChild(isi_button)
-
-button_yes.style.float = 'right'
-const button = [button_yes]
-button.forEach(e => button_yes.setAttribute('class', `${Date.now()}`))
 
 
 
