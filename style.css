@@ -35,7 +35,7 @@ body {
 span {
     /* border: 1px solid black; */
     box-sizing: border-box;
-    width: 180px;
+    width: 250px;
     display: block;
     background-color: lightblue;
     font-family: 'sourceSans';
