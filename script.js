@@ -104,7 +104,7 @@ function name() {
 
 
 
-const btnLight = document.querySelectorAll('button')
+const btnLight = document.querySelectorAll('.button button')
 btnLight[0].addEventListener('click', function e() {
     y()
 })
