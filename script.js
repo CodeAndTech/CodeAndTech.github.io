@@ -93,6 +93,7 @@ function name() {
         ul.appendChild(yes_3)
         b++
     } else if (a == 4) {
+        no_2.style.backgroundColor = 'rgb(196, 206, 64)'
         ul.appendChild(no_2)
         parent_button.appendChild(button_reefresh)
         btnLight[0].disabled = true
