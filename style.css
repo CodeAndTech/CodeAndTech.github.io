@@ -8,7 +8,7 @@ body {
 }
 
 .wrapper {
-    width: 400px;
+    min-width: 30%;
     min-height: 500px;
     position: relative;
     margin: 0px auto 120px auto;
@@ -34,6 +34,7 @@ body {
 }
 
 span {
+    min-width: 70%;
     display: block;
     background-color: lightblue;
     font-family: 'sourceSans';
