@@ -3,6 +3,10 @@
     src: url("./font/SourceSansPro-Regular.otf");
 }
 
+body {
+    background-color: rgb(81, 75, 88);
+}
+
 .wrapper {
     width: 400px;
     min-height: 500px;
