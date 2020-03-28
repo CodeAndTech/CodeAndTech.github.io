@@ -34,7 +34,7 @@ body {
 }
 
 span {
-    min-width: 70%;
+    min-width: 50%;
     display: block;
     background-color: lightblue;
     font-family: 'sourceSans';
