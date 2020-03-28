@@ -1,11 +1,11 @@
 let yes = [
     'apakah mengalami gejala batuk, demam, sesak nafas?',
     'sudah lebih dari 4 hari atau belum?', 'apakah gejala semakin memburuk?',
-    `Pernah mengunjungi Negara atau kota yang sudah terinfeksi 
+    `Pernah mengunjungi Negara atau kota yang sudah terinfeksi, 
     contohnya:China,Singapura
     ,Malaysia
     ,Jakarta,Bekasi,Depok`,
-    'Anda termasuk dalam pasien dengan kondisi BERAT, segerakan cek kesehatan di rumah sakit rujukan corona atau telepon hotline corona di 112/119'
+    `Anda termasuk dalam pasien dengan kondisi BERAT, segerakan cek kesehatan di rumah sakit rujukan corona atau telepon hotline corona di 112/119`
 ]
 let no = [
     'Alhamdulillah anda sehat, Lakukan Social Distancing dan perkuat imun tubuh anda dengan cara berolahraga dan makan makanan yang bergizi',
@@ -21,6 +21,7 @@ console.log(span)
 
 function y() {
     if (a == 0) {
+
         ul.appendChild(yes_0)
         a++
         console.log(a)
@@ -62,12 +63,12 @@ function y() {
 
 function name() {
     if (a == 0) {
-        span.innerHTML = no[0]
+        ul.appendChild(no_0)
         console.log(a)
         btnLight[0].disabled = true
         btnLight[1].disabled = true
     } else if (a == 1) {
-        span.innerHTML = yes[3]
+        ul.appendChild(yes_3)
         b++
         console.log(b)
     } else if (a == 2) {
@@ -83,7 +84,8 @@ function name() {
         btnLight[1].disabled = true
     }
     if (b == 2) {
-        span.innerHTML = no[1]
+        no_1.style.backgroundColor = 'rgb(96, 196, 109)'
+        ul.appendChild(no_1)
         b++
         btnLight[0].disabled = true
         btnLight[1].disabled = true
@@ -120,6 +122,11 @@ button_reefresh.addEventListener('click', function (e) {
     return window.location.reload()
 })
 
+const link_rujukan = document.createElement('a')
+const isi_link = document.createTextNode('. Informasi lebih lanjut bisa klik disini')
+link_rujukan.appendChild(isi_link)
+link_rujukan.setAttribute('href', `https://www.covid19.go.id/`)
+
 
 
 
@@ -144,6 +151,22 @@ const yes_3 = document.createElement('span')
 const isi_New_Li_3 = document.createTextNode(`${yes[3]}`)
 yes_3.appendChild(isi_New_Li_3)
 
+
 const yes_4 = document.createElement('span')
 const isi_New_Li_4 = document.createTextNode(`${yes[4]}`)
 yes_4.appendChild(isi_New_Li_4)
+yes_4.appendChild(link_rujukan)
+
+
+const no_0 = document.createElement('span')
+const isi_New_no_0 = document.createTextNode(`${no[0]}`)
+no_0.appendChild(isi_New_no_0)
+
+
+const no_1 = document.createElement('span')
+const isi_New_no_1 = document.createTextNode(`${no[1]}`)
+no_1.appendChild(isi_New_no_1)
+
+const no_2 = document.createElement('span')
+const isi_New_no_2 = document.createTextNode(`${no[2]}`)
+no_2.appendChild(isi_New_no_2)
