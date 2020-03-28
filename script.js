@@ -59,11 +59,18 @@ function y() {
 
     }
     if (a == 4 && b == 1) {
-
+        no_2.style.backgroundColor = 'rgb(196, 206, 64)'
         ul.appendChild(no_2)
+        parent_button.appendChild(button_reefresh)
+        btnLight[0].disabled = true
+        btnLight[1].disabled = true
     }
     if (a == 4 && b == 2) {
+        no_2.style.backgroundColor = 'rgb(196, 206, 64)'
         ul.appendChild(no_2)
+        parent_button.appendChild(button_reefresh)
+        btnLight[0].disabled = true
+        btnLight[1].disabled = true
     }
 }
 
