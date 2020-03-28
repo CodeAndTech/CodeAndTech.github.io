@@ -20,13 +20,11 @@ console.log(span)
 
 function y() {
     if (a == 0) {
-        ul.appendChild(button_yes)
         ul.appendChild(yes_0)
         a++
         console.log(a)
     } else if (a == 1) {
         ul.appendChild(yes_1)
-        ul.appendChild(button_yes)
         a++
         console.log(a)
     } else if (a == 2) {
@@ -34,16 +32,18 @@ function y() {
         a++
         console.log(a)
     } else if (a == 3) {
-        span.innerHTML = yes[3]
+        ul.appendChild(yes_3)
         a++
 
         console.log(a)
     } else if (a == 4) {
-        span.innerHTML = yes[4]
-        a++
-        console.log(a)
+        yes_4.style.backgroundColor = 'rgb(168, 42, 59)'
+        ul.appendChild(yes_4)
+        parent_button.appendChild(button_reefresh)
         btnLight[0].disabled = true
         btnLight[1].disabled = true
+        a++
+        console.log(a)
     }
     if (a == 2 && b == 1) {
         span.innerHTML = no[3]
@@ -103,31 +103,46 @@ btnLight[1].addEventListener('click', function e() {
 })
 
 
-const button_yes = document.createElement('li')
-const isi_button = document.createTextNode(`yes`)
-button_yes.appendChild(isi_button)
+// const button_yes = document.createElement('li')
+// const isi_button = document.createTextNode(`yes`)
+// button_yes.appendChild(isi_button)
 
-button_yes.style.float = 'right'
-const button = [button_yes]
-button.forEach(e => button_yes.setAttribute('class', `${Date.now()}`))
-
+// button_yes.style.float = 'right'
+// const button = [button_yes]
+// button.forEach(e => button_yes.setAttribute('class', `${Date.now()}`))
+const parent_button = document.querySelector('.button')
+const button_reefresh = document.createElement('button')
+const isi_button = document.createTextNode('Refresh')
+button_reefresh.appendChild(isi_button)
+button_reefresh.classList.add('btn-primary')
+button_reefresh.addEventListener('click', function (e) {
+    return window.location.reload()
+})
 
 
 
 
 // buat list dengan DOM
-const yes_0 = document.createElement('li')
+const yes_0 = document.createElement('span')
 const isi_New_Li_0 = document.createTextNode(`${yes[0]}`)
 yes_0.appendChild(isi_New_Li_0)
 // tangkap parent
-const ul = document.querySelector('.display li')
+const ul = document.querySelector('.display')
 // masukkan element baru
 
 
-const yes_1 = document.createElement('li')
+const yes_1 = document.createElement('span')
 const isi_New_Li_1 = document.createTextNode(`${yes[1]}`)
 yes_1.appendChild(isi_New_Li_1)
 
-const yes_2 = document.createElement('li')
+const yes_2 = document.createElement('span')
 const isi_New_Li_2 = document.createTextNode(`${yes[2]}`)
 yes_2.appendChild(isi_New_Li_2)
+
+const yes_3 = document.createElement('span')
+const isi_New_Li_3 = document.createTextNode(`${yes[3]}`)
+yes_3.appendChild(isi_New_Li_3)
+
+const yes_4 = document.createElement('span')
+const isi_New_Li_4 = document.createTextNode(`${yes[4]}`)
+yes_4.appendChild(isi_New_Li_4)
