@@ -8,7 +8,8 @@ body {
 }
 
 .wrapper {
-    min-width: 30%;
+    max-width: 350px;
+    min-width: 300px;
     min-height: 500px;
     position: relative;
     margin: 0px auto 120px auto;
@@ -25,23 +26,23 @@ body {
 }
 
 .display {
-    width: 70%;
     height: auto;
     border-radius: 5px;
-    min-width: min-content;
     padding: 3px;
-
+    /* border: 1px solid black; */
 }
 
 span {
-    min-width: 50%;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 250px;
     display: block;
     background-color: lightblue;
     font-family: 'sourceSans';
     padding: 3px;
     margin-bottom: 20px;
     border-radius: 5px;
-    min-width: 300px;
+
 }
 
 .button {
