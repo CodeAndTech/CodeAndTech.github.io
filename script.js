@@ -40,10 +40,10 @@ function y() {
         yes_4.style.backgroundColor = 'rgb(168, 42, 59)'
         ul.appendChild(yes_4)
         parent_button.appendChild(button_reefresh)
-        a++
-        console.log(a)
         btnLight[0].disabled = true
         btnLight[1].disabled = true
+        a++
+        console.log(a)
     }
     if (a == 2 && b == 1) {
         span.innerHTML = no[3]
